@@ -9,150 +9,195 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <title>WarnerBros.com | Home of WB Movies, TV, Games, and more!</title>
+  <title>WarnerBros.com | Movies</title>
 </head>
 <body>
-  <nav class="navbar bg bg-light">
+  <nav class="navbar bg">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" style="width: 150px;"></a>
-      <ul class="nav">
+      <ul class="nav me">
         <li class="nav-item">
-          <a class="nav-link text-black" aria-current="page" href="movies.html">Movies</a>
+          <a class="nav-link text-white" aria-current="page" href="movies.html">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" href="tv.html">TV Shows</a>
+          <a class="nav-link text-white" href="tv.html">TV Shows</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" href="games.html">Games & Apps</a>
+          <a class="nav-link text-white" href="games.html">Games & Apps</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" href="feedback.html">Feedback</a>
+          <a class="nav-link text-white" href="feedback.html">Feedback</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-secondary" type="submit" title="Search">Go</button>
+        <button class="btn btn-outline-secondary" type="submit">Go</button>
       </form>
     </div>
-  </nav>  
+  </nav> 
   <div class="hero-container text-white text-capitalize">
-    <img src="https://media.wired.com/photos/61bccdd7b540f6bc340c4441/master/w_1920,c_limit/Culture_Matrix4-Warner%20Brothers.jpg" class="img-fluid" alt="...">
+    <img src="https://images.bauerhosting.com/legacy/media/6137/99b8/f234/ff21/0f67/b4d6/matrix-res-teaser-4.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=992&q=80" class="img-fluid" alt="...">
     <img src="https://assets.fanart.tv/fanart/movies/624860/hdmovielogo/the-matrix-resurrections-6435466918980.png" style="max-height: 300px; max-width: 300px; position:absolute; top: 35%; left: 40px; animation: fadeInUp; animation-duration: 2s"></img> 
-    <div class="movie-text">
-      <h5 class="text-start" style="top: 50%;">The Matrix Resurrections</h5>
-      <p class="text-start" style="top: 54%;">Thomas Anderson's seemingly ordinary life ends when he accepts Morpheus's offer, only to wake up to a new, more secure and much more dangerous Matrix.</p>
-      <div class="d-grid gap-2 d-md-block">
-        <button class="btn btn-primary" type="button" style="max-height: 300px; max-width: 500px; position:absolute; top:  65%; left: 40px; border-radius: 5px;"><a href="https://www.youtube.com/watch?v=9ix7TUGVYIo" target="_blank" title="Watch Trailer on YouTube" style="color: aliceblue;">Watch Trailer on <i class="bi bi-youtube" style="padding: 5px;"></i></button></a>
-      </div>  
-    </div>
+    <h5 class="text-start" style="max-height: 300px; max-width: 500px; position:absolute; top: 52%; left: 40px; animation: fadeInUp; animation-duration: 2s;">The matrix ressurections</h5>
+    <p class="text-start" style="max-height: 300px; max-width: 500px; position:absolute; top: 56%; left: 40px; animation: fadeInUp; animation-duration: 2s;">Thomas Anderson's seemingly ordinary life ends when he accepts Morpheus's offer, only to wake up to a new, more secure and much more dangerous Matrix.</p>
+    <div class="d-grid gap-2 d-md-block">
+      <button class="btn btn-outline-secondary" type="button" style="max-height: 300px; max-width: 500px; position:absolute; top:  68%; left: 40px; background-color: aliceblue; border-radius: 20px;"><a href="https://www.youtube.com/watch?v=9ix7TUGVYIo" target="_blank" style="color: #777;"><i class="bi bi-play-fill"></i> Watch Trailer</button></a>
+    </div>    
     
-  <!-- Card Carousel Section -->
-  <section class="container mt-5">
-    <div class="category">
-      <h3 style="color: #000;">Coming Soon to Theaters</h3>
-      <a href="movies.html">Show all</a>
-    </div>
-    <div id="comingSoonCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card">
-                <img src="https://live-production.wcms.abc-cdn.net.au/ef8de05f64497fd5fe5062ff51833edf?impolicy=wcms_crop_resize&cropH=1125&cropW=2000&xPos=0&yPos=81&width=862&height=485" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Dune: Part Two</h5>
-                  <p class="card-text">now playing</p>
-                </div>
+ <!-- Card Carousel Section -->
+<div class="container mt-5">
+  <div class="category">
+    <h3 style="color: #000;">What's hot</h3>
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/M/MV5BODI0YjNhNjUtYjM0My00MTUwLWFlYTMtMWI2NGUzYjNjNGQzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UY4096_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dune: Part Two</h5>
+                <p class="card-text">Now Playing</p>
+                <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="https://deadline.com/wp-content/uploads/2024/04/joaquin-phoenix-lady-gaga-joker-2.jpg?w=681&h=383&crop=1" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"> Folie à Deux</h5>
-                  <p class="card-text">only in theatres 10.04.24</p>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/godzilla_x_kong_the_new_empire_keyart_new.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">godzilla x kong the new empire</h5>
+                <p class="card-text">coming on march 29</p>
+                <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="https://variety.com/wp-content/uploads/2023/11/furiosa-trailer.jpg?w=1000" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">furiosa: a mad max saga</h5>
-                  <p class="card-text">only in theatres 24.05.24</p>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://deadline.com/wp-content/uploads/2024/04/JOKER2_VERT_TSR_STANDARD_2764x4096_DOM.jpg?w=1280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">joker: folie &#225; deux </h5>
+                <p class="card-text">coming on october 4</p>
+                <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="https://m.media-amazon.com/images/M/MV5BMWI4YTg5Y2MtMzI3OS00YzUwLWE2ZTQtMGMyYTY2YTc0YWEwXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">beetleJuice beetleJuice</h5>
-                  <p class="card-text">only in theatres 09.06.24</p>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://assets-prd.ignimgs.com/2023/12/11/friosa-vert-tsr-2764x4096-dom-1702328214406.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Furiosa: A Mad Max Saga</h5>
+                <p class="card-text">coming on may 24</p>
+                <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
               </div>
             </div>
           </div>
         </div>
-        <!-- Add more carousel items as needed -->
       </div>
-    </div>
-  </section>
-  
+    </div>    
+  </div>
+</div>
 
 <!-- Additional Section -->
 <section class="container mt-5">
   <div class="category">
-    <h3 style="color: #000;">Movie and TV Favorites</h3>
-    <a href="movies.html">Show all</a>
+    <h3 style="color: #000;">new releases to your own</h3>
   </div>
-  <div id="comingSoonCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card">
-              <img src="https://live-production.wcms.abc-cdn.net.au/ef8de05f64497fd5fe5062ff51833edf?impolicy=wcms_crop_resize&cropH=1125&cropW=2000&xPos=0&yPos=81&width=862&height=485" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dune: Part Two</h5>
-                <p class="card-text">now playing</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="https://deadline.com/wp-content/uploads/2024/04/joaquin-phoenix-lady-gaga-joker-2.jpg?w=681&h=383&crop=1" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> Folie à Deux</h5>
-                <p class="card-text">only in theatres 10.04.24</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="https://variety.com/wp-content/uploads/2023/11/furiosa-trailer.jpg?w=1000" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">furiosa: a mad max saga</h5>
-                <p class="card-text">only in theatres 24.05.24</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="https://m.media-amazon.com/images/M/MV5BMWI4YTg5Y2MtMzI3OS00YzUwLWE2ZTQtMGMyYTY2YTc0YWEwXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">beetleJuice beetleJuice</h5>
-                <p class="card-text">only in theatres 09.06.24</p>
-              </div>
-            </div>
-          </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Aquaman_and_the_Lost_Kingdom_poster.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aquaman and the Lost Kingdom</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
         </div>
       </div>
-      <!-- Add more carousel items as needed -->
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/91M3tCQaJPL._AC_SY879_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wonka</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://hebdenbridgepicturehouse.co.uk/images/3504.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Color Purple</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAaCuKES40RJ1WrMKD6R6t4GPF6KPKMtX5I4ZAEo9pU3IHEsOg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Nun II</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<section class="container mt-5">
+  <div class="category">
+    <h3 style="color: #000;">new releases to your own</h3>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Aquaman_and_the_Lost_Kingdom_poster.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aquaman and the Lost Kingdom</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/91M3tCQaJPL._AC_SY879_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wonka</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://hebdenbridgepicturehouse.co.uk/images/3504.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Color Purple</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAaCuKES40RJ1WrMKD6R6t4GPF6KPKMtX5I4ZAEo9pU3IHEsOg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Nun II</h5>
+          <p class="card-text">Own on Digital Now</p>
+          <a href="#" class="btn btn-primary"><i class="bi bi-play-fill"></i> Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer>
     <div class="footer-container">
@@ -196,7 +241,6 @@
   </footer>
 </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
