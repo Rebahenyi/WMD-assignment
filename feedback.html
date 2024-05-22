@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <title>WarnerBros.com | Home of WB Movies, TV, Games, and more!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  box-shadow: #777 2px 2px 2px 0px;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+  text-shadow: 0 0 5px #777;
+}
+
+
+.hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}       
+
+.hero-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 0 0;
+  filter: brightness(0.5);
+ }
+
+.container{
+  max-width: 1500px;
+  margin-bottom: 50px;
+}
+
+.card {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card-img-top {
+  object-fit: cover;
+  max-height: fit-content;
+}
+
+.movie-text h5,
+.movie-text p{
+  text-shadow: 0 0 20px #000; 
+  max-height: 300px; 
+  max-width: 500px; 
+  position:absolute;
+  left: 40px;
+  animation: fadeInUp; 
+  animation-duration: 2s;
+}
+
+.category{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 10px;
+}
+
+.category a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+}
+
+.category a:hover {
+text-decoration: underline;
+color: #000;
+}
+
+footer {
+    background: #010028;
+    padding: 10px;      
+    box-shadow: #000 2px 2px 10px 0px; 
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+  }
+
+  .footer-column {
+    flex: 1;
+    margin-right: 20px;
+    padding-left: 40px;  
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: #777 solid 2px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+  }
+
+  .footer-column li,
+  .footer-column a{
+    margin-bottom: 8px;
+    color: #fff;
+  }    
+  
+  .footer-column li:hover,
+  .footer-column a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .footer-column a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer-column .social-icons {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .copyright {
+    border-top: #777 solid 2px;
+    padding-top: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar bg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" style="width: 150px;"></a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-black" aria-current="page" href="movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="tv.html">TV Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="games.html">Games & Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit" title="Search">Go</button>
+      </form>
+    </div>
+  </nav>  
+  <div class="hero-container text-white text-capitalize">
+    <img src="https://preview.redd.it/i-tried-to-redesign-the-warner-bros-logo-any-feedback-is-v0-8k40a446u8xc1.png?width=944&format=png&auto=webp&s=e26a021c5a7a10683003b94036ec1560cff4ee5e" class="img-fluid" alt="...">
+  
+    
+  <!-- Card Carousel Section -->
+  <section class="container mt-5">
+    <div class="category">
+      <h3 style="color: #000;">Coming Soon to Theaters</h3>
+      <a href="">Show all</a>
+    </div>
+    <div id="comingSoonCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://live-production.wcms.abc-cdn.net.au/ef8de05f64497fd5fe5062ff51833edf?impolicy=wcms_crop_resize&cropH=1125&cropW=2000&xPos=0&yPos=81&width=862&height=485" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dune: Part Two</h5>
+                  <p class="card-text">now playing</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://deadline.com/wp-content/uploads/2024/04/joaquin-phoenix-lady-gaga-joker-2.jpg?w=681&h=383&crop=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Folie à Deux</h5>
+                  <p class="card-text">only in theatres 10.04.24</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://variety.com/wp-content/uploads/2023/11/furiosa-trailer.jpg?w=1000" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">furiosa: a mad max saga</h5>
+                  <p class="card-text">only in theatres 24.05.24</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMWI4YTg5Y2MtMzI3OS00YzUwLWE2ZTQtMGMyYTY2YTc0YWEwXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">beetleJuice beetleJuice</h5>
+                  <p class="card-text">only in theatres 09.06.24</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <div class="category">
+      <h3 style="color: #000;">Movie & TV Favorites</h3>
+      <a href="tv.html">Show all</a>
+    </div>
+    <div id="comingSoonCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://townsquare.media/site/442/files/2023/11/attachment-aquaman-2-poster.jpg?w=780&q=75" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dune: Part Two</h5>
+                  <p class="card-text">now playing</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://variety.com/wp-content/uploads/2023/12/Screen-Shot-2023-12-12-at-11.13.12-AM.png?w=1000&h=563&crop=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Movie Title 2</h5>
+                  <p class="card-text">Brief description of the movie.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://media.glamourmagazine.co.uk/photos/646c9c153e51ce654d89120c/3:2/w_1920,h_1280,c_limit/THE%20COLOUR%20PURPLE%20230523%208.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Movie Title 3</h5>
+                  <p class="card-text">Brief description of the movie.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="https://i0.wp.com/www.thewrap.com/wp-content/uploads/2023/09/the-nun-ii.jpeg?fit=990%2C557&ssl=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Movie Title 4</h5>
+                  <p class="card-text">Brief description of the movie.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+      </div>
+    </div>
+  </section>
+
+    <!-- footer -->
+  <footer class="text-white text-capitalize">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Movies</h3>
+        <ul>
+          <li><a href="movies.html">Upcoming</a></li>
+          <li><a href="movies.html">Latest</a></li>
+          <li><a href="movies.html">Top Rated</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>TV Shows</h3>
+        <ul>
+          <li><a href="tv.html">Airing Today</a></li>
+          <li><a href="tv.html">On TV</a></li>
+          <li><a href="tv.html">Popular</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Games & Apps</h3>
+        <ul>
+          <li><a href="games.html">PC</a></li>
+          <li><a href="games.html">Console</a></li>
+          <li><a href="games.html">Mobile</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p class="text-center">&copy; 2023 Warner Bros. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
